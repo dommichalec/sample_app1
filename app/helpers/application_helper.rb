@@ -7,4 +7,8 @@ module ApplicationHelper
       title + " | " + base_title
     end
   end
+
+  def show_development_debugger
+    debug(params) if Rails.env.development?
+  end
 end

@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'test_helper'
 # bundle exec rails test:models
 
 class UserTest < ActiveSupport::TestCase
