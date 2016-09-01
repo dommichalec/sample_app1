@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/contact',  to:    'static_pages#contact'
   get 'login', to: 'session#new'
   post 'login', to: 'session#create'
-  post 'login_post', to: 'session#create'
+  post 'login', to: 'session#create', as: 'login_post'
   delete 'logout', to: 'session#destroy'
 end
